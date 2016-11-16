@@ -4,9 +4,10 @@
     angular.module('app', [
         // Angular modules 
         'ngRoute',
-        'home',
-        'about',
-        'contact'
+        'home'
+        //,
+        //'about',
+        //'contact'
 
         // Custom modules 
 
