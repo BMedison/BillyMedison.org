@@ -29,9 +29,9 @@
             <!--<menulink class="blue item" asp-area="" controller-name="Home" action-name="Index" menu-text="Home"></menulink>
             <menulink class="blue item" asp-area="" controller-name="Home" action-name="About" menu-text="About"></menulink>
             <menulink class="blue item" asp-area="" controller-name="Home" action-name="Contact" menu-text="Contact">Contact</menulink>-->
-            <a href="#!/home" class="blue item">Home</a>
+            <a href="#!/home" class="active blue item">Home</a>
             <a href="#" class="blue item">About</a>
-            <a href="#" class="blue item">Contact</a>
+            <a href="#!/contact" class="blue item">Contact</a>
         </div>
     </div>
 
@@ -40,9 +40,9 @@
         <!--<menulink class="blue item" asp-area="" controller-name="Home" action-name="Index" menu-text="Home"></menulink>
         <menulink class="blue item" asp-area="" controller-name="Home" action-name="About" menu-text="About"></menulink>
         <menulink class="blue item" asp-area="" controller-name="Home" action-name="Contact" menu-text="Contact"></menulink>-->
-        <a href="#!/home" class="blue item">Home</a>
+        <a href="#!/home" class="active blue item">Home</a>
         <a href="#" class="blue item">About</a>
-        <a href="#" class="blue item">Contact</a>
+        <a href="#!/contact" class="blue item">Contact</a>
     </div>
 
     <!-- Page Contents -->
@@ -89,6 +89,7 @@
         <script src="js/site.js"></script>
         <script src="app.js"></script>
         <script src="app/home/home.js"></script>
+        <script src="app/contact/contact.js"></script>
     </environment>
     <environment names="Staging, Production">
         <script src="lib/angularjs/angular.min.js"
@@ -106,6 +107,9 @@
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
         </script>
         <script src="js/site.min.js" asp-append-version="true"></script>
+        <script src="app.js"></script>
+        <script src="app/home/home.js"></script>
+        <script src="app/contact/contact.js"></script>
     </environment>
 </body>
 </html>

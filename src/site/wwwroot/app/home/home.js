@@ -34,7 +34,8 @@
     function home_controller() {
         /* jshint validthis:true */
         var vm = this;
-        vm.title = 'Home Controller';
+        vm.title = 'About DI';
+        vm.description = 'Last article is about dependency injection in C#.';
 
         activate();
 
