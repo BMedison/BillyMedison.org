@@ -28,7 +28,10 @@ namespace site
                 app.UseDeveloperExceptionPage();
             }
 
+            //work with default files
             app.UseDefaultFiles();
+
+            //work with static files
             app.UseStaticFiles();
         }
     }
