@@ -17,6 +17,9 @@
         vm.title = 'Contact';
         vm.description = 'Contat info';
 
+        $('.blue.item').removeClass('active');
+        $('a#contact_mnu.blue.item').addClass('active');
+
         activate();
 
         function activate() { }

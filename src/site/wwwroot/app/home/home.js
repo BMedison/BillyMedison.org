@@ -1,24 +1,4 @@
-﻿//(function () {
-//    'use strict';
-
-//    angular
-//        .module('app')
-//        .controller('home_controller', home_controller);
-
-//    home_controller.$inject = ['$location']; 
-
-//    function home_controller($location) {
-//        /* jshint validthis:true */
-//        var vm = this;
-//        vm.title = 'home_controller';
-
-//        activate();
-
-//        function activate() { }
-//    }
-//})();
-
-(function () {
+﻿(function () {
     'use strict';
 
     angular
@@ -36,6 +16,9 @@
         var vm = this;
         vm.title = 'About DI';
         vm.description = 'Last article is about dependency injection in C#.';
+
+        $('.blue.item').removeClass('active')
+        $('a#home_mnu.blue.item').addClass('active');
 
         activate();
 
