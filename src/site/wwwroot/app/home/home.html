@@ -1,62 +1,64 @@
-﻿<div ng-controller="HomeCtrl as vm">
-    <div class="ui blue inverted vertical masthead center aligned segment">
-        <div class="ui text container">
-            <h1 class="ui inverted header">
-                {{vm.title}}
-            </h1>
-            <h2>{{vm.description}}</h2>
-            <a class="ui huge secondary button" href="http://semantic-ui.com/">
-                Read it now <i class="right arrow icon"></i>
-            </a>
+﻿<div class="ui blue inverted vertical masthead center aligned segment" ng-controller="HomeCtrl as vm">
+    <div class="ui text container">
+        <h1 class="ui inverted header">
+            {{vm.title}}
+        </h1>
+        <h2>{{vm.description}}</h2>
+        <a class="ui huge secondary button" href="http://semantic-ui.com/">
+            Read it now <i class="right arrow icon"></i>
+        </a>
+    </div>
+</div>
+<div class="ui grid">
+    <div class="eight wide column">
+        <div class="ui segment">
+            <h1 class="ui black ribbon label">Last topics</h1>
+            <ol class="ui list">
+                <li ng-repeat="topic in vm.topics">
+                    <!--<a href="{{topic.url}}">
+                        {{topic.name}}
+                    </a>-->
+                    {{topic.url}}
+                    {{topic.name}}
+                </li>
+            </ol>
         </div>
     </div>
-    <div class="ui grid">
-        <div class="eight wide column">
-            <div class="ui segment">
-                <h1 class="ui black ribbon label">Last topics</h1>
-                <ol class="ui list">
-                    <li ng-repeat="topic in vm.topics">
-                        <a href="{{topic.url}}">{{topic.name}}</a>
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class="eight wide column">
-            <div class="ui segment">
-                <h1 class="ui black ribbon label">Overview</h1>
-                <ol class="ui list">
-                    <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET 5</a></li>
-                    <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET 5 such as Startup and middleware.</a></li>
-                    <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-                    <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-                    <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-                    <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-                    <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-                </ol>
-            </div>
+    <div class="eight wide column">
+        <div class="ui segment">
+            <h1 class="ui black ribbon label">Overview</h1>
+            <ol class="ui list">
+                <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET 5</a></li>
+                <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET 5 such as Startup and middleware.</a></li>
+                <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
+                <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
+                <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
+                <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
+                <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
+            </ol>
         </div>
     </div>
-    <div class="ui grid">
-        <div class="eight wide column">
-            <div class="ui segment">
-                <h1 class="ui black ribbon label">Run & Deploy</h1>
-                <ol class="ui list">
-                    <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-                    <li><a href="https://go.microsoft.com/fwlink/?LinkID=517852">Run your app on .NET Core</a></li>
-                    <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run commands in your project.json</a></li>
-                    <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-                </ol>
-            </div>
+</div>
+<div class="ui grid">
+    <div class="eight wide column">
+        <div class="ui segment">
+            <h1 class="ui black ribbon label">Run & Deploy</h1>
+            <ol class="ui list">
+                <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
+                <li><a href="https://go.microsoft.com/fwlink/?LinkID=517852">Run your app on .NET Core</a></li>
+                <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run commands in your project.json</a></li>
+                <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
+            </ol>
         </div>
-        <div class="eight wide column">
-            <div class="ui segment">
-                <h1 class="ui black ribbon label">Application Uses</h1>
-                <ol class="left aligned ui list">
-                    <li>Sample pages using ASP.NET MVC 6</li>
-                    <li><a href="https://go.microsoft.com/fwlink/?LinkId=518007">Gulp</a> and <a href="https://go.microsoft.com/fwlink/?LinkId=518004">Bower</a> for managing client-side libraries</li>
-                    <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-                </ol>
-            </div>
+    </div>
+    <div class="eight wide column">
+        <div class="ui segment">
+            <h1 class="ui black ribbon label">Application Uses</h1>
+            <ol class="left aligned ui list">
+                <li>Sample pages using ASP.NET MVC 6</li>
+                <li><a href="https://go.microsoft.com/fwlink/?LinkId=518007">Gulp</a> and <a href="https://go.microsoft.com/fwlink/?LinkId=518004">Bower</a> for managing client-side libraries</li>
+                <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
+            </ol>
         </div>
     </div>
 </div>
