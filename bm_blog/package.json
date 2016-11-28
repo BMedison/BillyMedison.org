@@ -1,0 +1,13 @@
+{
+  "name": "bm_blog",
+  "version": "0.0.0",
+  "description": "bm_blog",
+  "main": "server.js",
+  "author": {
+    "name": "sergei.karimov"
+  },
+  "dependencies": {
+    "pm2": "^2.1.5",
+    "seneca": "^3.2.2"
+  }
+}
